@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1- Navbar : accueil, à propos, travail, CV, contact -->
+    <header>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#travail">Travail</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Bonjour, je m'appelle Henacko. Je suis étudiant en développement web et ceci est mon deuxième checkpoint.</p>
+            
+            <!-- Intégration d'une vidéo (requis) -->
+            <h3>Découvrez une brève présentation :</h3>
+            <video width="100%" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </section>
+
+        <!-- 2- Section "À propos" -->
+        <section id="apropos">
+            <h2>À propos de moi</h2>
+            <p>Passionné par les technologies du web et la programmation, j'apprends à créer des interfaces modernes, ergonomiques et sémantiques.</p>
+            <h3>Mes compétences (Liste) :</h3>
+            <ul>
+                <li>HTML5 / Balises sémantiques</li>
+                <li>CSS3 / Feuilles de style séparées</li>
+                <li>Bases de JavaScript</li>
+            </ul>
+        </section>
+
+        <!-- 2- Section "Travail" (avec liens locaux, listes ou tableaux) -->
+        <section id="travail">
+            <h2>Mon Travail</h2>
+            <p>Voici un aperçu de mes projets et des liens locaux :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projet</th>
+                        <th>Description</th>
+                        <th>Lien rapide</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Projet 1</td>
+                        <td>Création d'une page de présentation en HTML/CSS.</td>
+                        <td><a href="#accueil">Aller à l'accueil</a></td>
+                    </tr>
+                    <tr>
+                        <td>Projet 2</td>
+                        <td>Intégration d'un formulaire et de tableaux sémantiques.</td>
+                        <td><a href="#contact">Aller au contact</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2- Section "CV" -->
+        <section id="cv">
+            <h2>Mon CV</h2>
+            <p>Retrouvez ci-dessous mon parcours académique :</p>
+            <ul>
+                <li><strong>2025 - Présent :</strong> Formation Développeur Web chez GoMyCode</li>
+                <li><strong>2024 :</strong> Obtention du Diplôme / Études secondaires</li>
+            </ul>
+        </section>
+
+        <!-- 2- Section "Contact" (avec HTML Forms) -->
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form action="#" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Votre message..."></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 3- Pied de page -->
+    <footer>
+        <p>&copy; 2026 - Henacko | Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
